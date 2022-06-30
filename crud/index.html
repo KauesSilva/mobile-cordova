@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href='http://fonts.googleapis.com/css?family=Bitter:400,700,400italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="main.js"></script>
+        <script src="banco.js"></script>
+        <title>SQLite - CRUD</title>
+    </head>
+
+    <body>
+        <h1>SQLite - CRUD</h1>
+        <div class="aligncenter">
+            <form class="form">
+                <input type="hidden" id="field-id" value="" />
+                <div class="box">
+                    <input type="text" id="field-name"/>
+                    <label for="field-name">Nome</label>
+                </div>
+
+                <div class="box">
+                    <input type="text" id="field-mail"/>
+                    <label for="field-mail">E-mail</label>
+                </div>
+
+                <div class="box">
+                    <input type="text" id="field-pass"/>
+                    <label for="field-pass">Senha</label>
+                </div>
+
+                <div class="per"><a id="btn-salvar" class="button" >SALVAR</a></div>
+                <div class="per"><a id="btn-deletar" class="button" >DELETAR</a></div>
+            </form>
+            <table id="table-register">
+                <thead>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Senha</th>
+                </thead>
+                <tbody id="tbody-register">
+                
+                </tbody>
+            </table>
+        </div>
+    </body>
+
+</html>
